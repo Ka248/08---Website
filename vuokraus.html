@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>Puutarha, vuokraus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css"> <!--  CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="vuokraus">
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html#myPage">
+        <img src="images/logo.png" alt="Logo" style="height: 30px; margin-right: 10px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">KOTI</a></li>
+        <li><a href="index.html#KUKKAVALIKOIMA">KUKKAVALIKOIMA</a></li>
+        <li><a href="index.html#puutarhanvierailu">PUUTARHAN VIERAILU</a></li>
+        <li><a href="index.html#contact">YHTEYSTIEDOT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">LISÄÄ
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="suunnittelukonsultointi.html">Puutarhan suunnittelukonsultointi</a></li>
+            <li><a href="hoitovinkit.html">Kukkien hoitovinkit</a></li>
+            <li><a href="vuokraus.html">Valokuvauspaikkojen ja tilojen vuokraus</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Container (Vinkit) -->
+<div id="Vuokraus" class="container text-center">
+  <h3>Valokuvauspaikkojen ja tilojen vuokraus</h3>
+  <p><em>Jokainen valokuvasi on ainutlaatuinen.</em></p>
+  <p> Puistossamme voit järjestää upean valokuvauksen luonnonkauniissa ympäristössä. Käytettävissäsi on vuokrattavia valokuvausalueita, jotka on erityisesti sisustettu tätä tarkoitusta varten. Ennakkotilauksesta voimme järjestää kukkakoristelun – luomme juuri sinun tilaisuuteesi sopivan tunnelman.</p>
+ 
+</div>
+
+<!-- kuuden valokuvan ruudukko, joka mukautuu näytön kokoon -->
+<div class="container text-center" id="photo-grid" style="margin-bottom: 5px;"> 
+    <p>Katso, miten kauniit kuvat syntyvät kukkien keskellä!</p>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="images/16.jpg" class="img-responsive img-thumbnail" alt="Valokuvausalue kaarella"
+      data-toggle="modal" data-target="#imageModal" data-img-src="images/16.jpg">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="images/17.jpg" class="img-responsive img-thumbnail" alt="Valokuvausnurkkaus riippukeinutuolilla"
+      data-toggle="modal" data-target="#imageModal" data-img-src="images/17.jpg">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="images/18.jpg" class="img-responsive img-thumbnail" alt="Valokuvausalue keinulla"
+      data-toggle="modal" data-target="#imageModal" data-img-src="images/18.jpg">
+    </div>
+       
+  </div>
+</div>
+
+<!-- Modal for image preview -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      
+      <!-- otsikko ja x -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Sulje">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="imageModalLabel">Valokuvausalue</h4>
+      </div>
+      
+      <div class="modal-body text-center">
+        <img src="" id="modalImage" class="img-responsive center-block" alt="Preview">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section - Yhteystiedot) -->
+<div id="contact" class="container">
+  
+  <div class="row">
+    <div class="col-md-4">
+      <p>Haluatko valokuvauksen puistossamme? Jätä yhteystietosi, otamme sinuun yhteyttä mahdollisimman pian.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Espoo, Suomi</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Puhelin: +7358123456789</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Syötä nimesi" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Syötä sähköpostiosoitteesi" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Jätä viestisi" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Lähetä</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<footer class="text-center">
+  <a class="up-arrow" href="#vuokraus" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <br><br>
+
+  <div class="social-icons">
+    <a href="https://www.youtube.com/watch?v=4FLpto4rvK8" target="_blank" class="fab fa-youtube" title="YouTube"></a>
+    <a href="https://t.me/BorovskikhKarina" target="_blank" class="fab fa-telegram" title="Telegram"></a>
+    <a href="https://www.instagram.com/_karina._karina?igsh=MWdjNjExcjNtYTk2" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+  </div>
+
+  <p>Karina B, 2025.
+    <a href="https://wa.me/358449759016?text=Hei%2C%20minua%20kiinnostaa%20verkkosivuston%20kehitt%C3%A4minen." data-toggle="tooltip" title="Kirjoita viesti">Kirjoita viesti</a>
+  </p>
+</footer>
+
+<!-- Skripti kuvan avaamiseksi täydessä koossan -->
+<script> 
+  $('#imageModal').on('show.bs.modal', function (event) {
+    var img = $(event.relatedTarget); // Kuva, jota klikattiin
+    var src = img.data('img-src'); // Kuvan polku
+    var modal = $(this);
+    modal.find('#modalImage').attr('src', src);
+  });
+</script>
+</body>
+</html>

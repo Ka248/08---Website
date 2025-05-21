@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>Puutarha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css"> <!--  CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myPage">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">
+        <img src="images/logo.png" alt="Logo" style="height: 30px; margin-right: 10px;">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">KOTI</a></li>
+        <li><a href="#KUKKAVALIKOIMA">KUKKAVALIKOIMA</a></li>
+        <li><a href="#puutarhanvierailu">PUUTARHAN VIERAILU</a></li>
+        <li><a href="#contact">YHTEYSTIEDOT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">LISÄÄ
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="suunnittelukonsultointi.html">Puutarhan suunnittelukonsultointi</a></li>
+            <li><a href="hoitovinkit.html">Kukkien hoitovinkit</a></li>
+            <li><a href="vuokraus.html">Valokuvauspaikkojen ja tilojen vuokraus</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides - diojen säiliö -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/1.jpg" alt="Siniset muskarit" class="img-responsive">
+        <div class="carousel-caption">
+          <h3>Muscari "Dark Eyes"</h3>
+          <p>Upea kukka on valmis asettumaan viheralueellesi ja keräämään uteliaita katseita. Dark Eyes on kukkiva muskarilajike, joka ei nouse juurikaan maanpinnan yläpuolelle, mutta levittää muskarintuoksua jopa ihmiskorkeuden yli. </p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/2.jpg" alt="Narsissi" class="img-responsive">
+        <div class="carousel-caption">
+          <h3>Narsissi "Tahiti"</h3>
+          <p>Kerrottu narsissi "Tahiti". Kerrotuilla narsisseilla ei ole varsinaista torvea tai kruunua, vaan terälehtien keskusta on useiden terälehtien täyttämä.</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="images/3.jpg" alt="Kirsikkapuu" class="img-responsive">
+        <div class="carousel-caption">
+          <h3>Kirsikkapuu</h3>
+          <p>Kirsikkapuut ovat pikkupuita tai pensaita, jotka ihastuttavat satumaisen kauniilla kukinnallaan aikaisin keväällä. 
+            Myös mantelit ilahduttavat kukoistuksellaan samoihin aikoihin.</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls - Edellinen ja seuraava -painikkeet -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Edellinen</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Seuraava</span>
+    </a>
+</div>
+
+<!-- Container (KUKKAVALIKOIMA) -->
+<div id="KUKKAVALIKOIMA" class="container text-center">
+  <h3>KUKKAVALIKOIMA</h3>
+  <p><em>Me rakastamme kukkia.</em></p>
+  <p>Kukat eivät ole vain osa luontoa – ne ovat todellista taidetta, jonka ovat luoneet sekä luonto että ihminen. Niiden kauneus inspiroi taiteilijoita, runoilijoita ja kaikkia, jotka osaavat nähdä kauneutta yksityiskohdissa. Kukat voivat ilahduttaa silmää ympäri vuoden – keväällä, kesällä, syksyllä ja jopa talvella, jos valitsee oikeat lajit. Aurinkoisille penkeille ja varjoisille puutarhan nurkille löytyy aina sopivia kasveja: toiset kukkivat kirkkaasti auringonpaisteessa, toiset puhkeavat hellästi kukkaan varjossa. Oikein valitut kukkakokonaisuudet voivat luoda tunnelmaa, korostaa tilan tyyliä ja tarjota esteettistä nautintoa joka päivä.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Huonekasvit</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="images/5.jpg" class="img-circle person" alt="Orkidea" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Hurmaavia ja hienostuneita orkideoita</p>
+        <p>Rakastavat hajavaloa ja lämmintä ilmastoa</p>
+        <p>Tuhansia lajeja ja sävyjä ympäri maailman</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Puutarhakukat</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="images/6.jpg" class="img-circle person" alt="Puutarhakukat" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Värikkäitä ja monipuolisia puutarhakukkia</p>
+        <p>Rakastavat avaraa tilaa ja oikeanlaista hoitoa</p>
+        <p>Voivat olla vuosittaisia tai monivuotisia, tarjoten kauneutta joka vuosi</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Pensaat ja puut</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="images/7.jpg" class="img-circle person" alt="Pensaat ja puut" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Koristeellisia ja hedelmällisiä pensaita ja puita</p>
+        <p>Voivat koristella puutarhaa, toimia aidaksi tai tuottaa herkullisia hedelmiä</p>
+        <p>Monipuolisia vaihtoehtoja, jotka rikastuttavat pihaa ympäri vuoden</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section - Puutarhan vierailu) -->
+<div id="puutarhanvierailu" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">PUUTARHAN VIERAILU</h3>
+    <p class="text-center">Meidän puutarhassa voit nauttia luonnon kauneudesta ja lähteä mielenkiintoiselle opastetulle kierrokselle. Opi kasvien monimuotoisuudesta, niiden erityispiirteistä ja hoidosta. Kierroksen jälkeen älä unohda vierailla myymälässämme, jossa voit ostaa upeita kukkia, kasveja ja puutarhatarvikkeita omaan puutarhaasi. Olemme iloisia voidessamme jakaa kauneutta ja inspiraatiota puutarhasi koristeluun!</p>
+    <ul class="list-group">
+      <li class="list-group-item">Touko–kesäkuu <span class="label label-danger">Varaus on jo käynnissä!</span></li>
+      <li class="list-group-item">Heinä–elokuu <span class="label label-danger">Varaus on jo käynnissä</span></li> 
+      <li class="list-group-item">Syys–lokakuu <span class="badge">Varaaminen alkaa pian!</span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/8.jpg" alt="Touko–kesäkuu" width="400" height="300">
+          <p><strong>Touko–kesäkuu</strong></p>
+          <p>14.04-30.06.2025.</p>
+          <p>Maanantaisin puutarha on suljettu.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Osta lippu</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/9.jpg" alt="Heinä–elokuu" width="400" height="300">
+          <p><strong>Heinä–elokuu</strong></p>
+          <p>1.07-31.08.2025</p>
+          <p>Maanantaisin puutarha on suljettu.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Osta lippu</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/10.jpg" alt="Syys–lokakuu" width="400" height="300">
+          <p><strong>Syys–lokakuu</strong></p>
+          <p>1.09-31.10.2025</p>
+          <p>Maanantaisin puutarha on suljettu.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Osta lippu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Osta lippu</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Lippu puistoon: 7 €, alle 4-vuotiaat lapset ilmaiseksi.</label>
+              <input type="number" class="form-control" id="psw" placeholder="Kuinka monta lippua haluatte ostaa?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Lähetä</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Syötä sähköpostiosoitteesi">
+            </div>
+              <button type="submit" class="btn btn-block">Maksa 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Peruuta
+          </button>
+          <p>Tarvitsetko <a href="#">apua?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section - Yhteystiedot) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Yhteystiedot</h3>
+  <p class="text-center"><em>Olemme aina iloisia vierailijoista!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Tarvitsetko lisätietoja tai neuvontaa, sekä valokuvatilavarauksiin liittyen, jätä viesti. Otamme yhteyttä mahdollisimman pian.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Espoo, Suomi</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Puhelin: +7358123456789</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Syötä nimesi" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Syötä sähköpostiosoitteesi" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Jätä viestisi" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Lähetä</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">Blogista</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Huonekasvit</a></li>
+    <li><a data-toggle="tab" href="#menu1">Puutarhakukat</a></li>
+    <li><a data-toggle="tab" href="#menu2">Pensaat ja puut</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Huonekasvit</h2>
+      <p>Sisäkasvit eivät ole pelkästään kodin koristelua, vaan myös lähde mukavuudelle ja raikkaudelle. Ne luovat harmonisen tunnelman, puhdistavat ilmaa ja tuovat eloa sisustukseen. Riippuen kotiisi sopivista olosuhteista, voit valita kasveja, jotka sopeutuvat varjoon tai toisaalta nauttivat auringonpaisteesta. Orkideat, fikukset, kaktukset ja mehikasvit voivat kaikki olla sisustuksen kirkas lisäys. Sisäkasvit eivät vaadi paljoa hoitoa, mutta ne vastaavat kauneudellaan ja vihreydellään. Niistä huolehtiminen tuo iloa ja auttaa luomaan kodikkaan kulman kotiisi.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Puutarhakukat</h2>
+      <p>Puutarhakukat eivät vain kaunistavat pihaasi, vaan luovat myös iloisen ja värikkään tunnelman ympärillesi. Ne rikastuttavat pihaa eri vuodenaikoina ja tarjoavat upeita värejä ja tuoksuja. Riippuen pihasi olosuhteista, voit valita kasveja, jotka viihtyvät auringossa tai varjossa, tai jopa kasveja, jotka kestävät vaihtelevaa säätä. Ruusut, tulppaanit, daaliat ja laventelit ovat vain muutamia esimerkkejä kauniista ja monimuotoisista kukista, joita voit istuttaa puutarhaasi. Puutarhakukat eivät ainoastaan piristä maisemaa, vaan niistä huolehtiminen tuo myös rauhaa ja tyyneyttä arkeen.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Pensaat ja puut</h2>
+      <p>Puutarhan pensaat ja puut eivät vain tarjoa varjoa ja yksityisyyttä, vaan myös koristelevat pihaasi ympäri vuoden. Ne luovat rakenteellista monimuotoisuutta ja lisäävät visuaalista kiinnostavuutta, olipa kyseessä pensasaita, hedelmäpuu tai koristepuu. Voit valita pensaita ja puita, jotka kasvavat nopeasti ja tarjoavat suojaa, tai hitaasti kasvavia kasveja, jotka tuovat kauneutta ja tasapainoa puutarhaasi. Hedelmätarhan puut, kuten omenapuut ja kirsikkapuut, tuottavat herkullisia hedelmiä, kun taas koristepuiden kukat ja lehdet rikastuttavat maisemaa. Pensaat ja puut ovat erinomainen valinta, jos haluat lisätä luonnon monimuotoisuutta ja elämää puutarhassasi.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="img-responsive" style="width:100%">
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <br><br>
+
+  <div class="social-icons">
+    <a href="https://www.youtube.com/watch?v=4FLpto4rvK8" target="_blank" class="fab fa-youtube" title="YouTube"></a>
+    <a href="https://t.me/BorovskikhKarina" target="_blank" class="fab fa-telegram" title="Telegram"></a>
+    <a href="https://www.instagram.com/_karina._karina?igsh=MWdjNjExcjNtYTk2" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+  </div>
+
+  <p>Karina B, 2025.
+    <a href="https://wa.me/358449759016?text=Hei%2C%20minua%20kiinnostaa%20verkkosivuston%20kehitt%C3%A4minen." data-toggle="tooltip" title="Kirjoita viesti">Kirjoita viesti</a>
+  </p>
+</footer>
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
